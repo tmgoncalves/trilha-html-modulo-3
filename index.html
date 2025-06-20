@@ -4,41 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Wikipédia - Crime e Castigo</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <div>   
+    <header role="banner">
         <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
+            <a href="/" aria-label="Ir para a página inicial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" width="100" alt="Logo do site Wikipédia - Crime e Castigo" />
+            </a>
         </div>
-    </div>
+    </header>
 
-    <div class="bar"></div>
+    <div class="bar" role="presentation" aria-hidden="true"></div>
 
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
+    <main class="content" role="main">
+        <aside class="sidebar" role="complementary" aria-label="Navegação lateral">
+            <h2 id="titulo-sidebar">Título</h2>
+            <nav aria-labelledby="titulo-sidebar">
+                <ul>
+                    <li><a href="https://pt.wikipedia.org/wiki/Crime_e_Castigo">Saiba mais</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-        <div class="main">
-            
-        </div>
+        <section class="main" aria-labelledby="titulo-principal">
+            <h1 id="titulo-principal">Livro: Crime e Castigo</h1>
+            <p>
+                <strong>Crime e Castigo</strong> (em russo, Преступление и наказание, <em>Prestuplênie i nakazánie</em>) é um romance do escritor Fiódor Dostoiévski, publicado na revista literária <em>O Mensageiro Russo</em> durante doze edições mensais ao longo do ano de 1866. Posteriormente, foi publicado em volume único. É o segundo romance de Dostoiévski, escrito após seu exílio de dez anos na Sibéria. <em>Crime e Castigo</em> é considerado o primeiro grande romance do seu período de escrita "maduro". O romance é frequentemente mencionado como uma das maiores obras da literatura universal.
+            </p>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
-        </div>
-    </div>
+            <h2 id="titulo-enredo">Enredo</h2>
+            <p>
+                O personagem principal, apesar de ex-estudante de Direito, é um homem extremamente pobre e que vive angustiado pela sombra de fazer algo importante. Ele divide os indivíduos em ordinários e extraordinários, numa tentativa de explicar a quebra das regras em prol do avanço humano. Seguindo esse preceito, o personagem planeja e concretiza, em meio a uma luta com sua consciência, a morte de uma agiota.
+            </p>
 
-    <div class="footer">
+            <figure role="group" aria-labelledby="figcaption-crime">
+                <img 
+                    src="https://m.media-amazon.com/images/I/916WkSH4cGL.jpg" 
+                    alt="Capa do livro Crime e Castigo com ilustração sombria, remetendo ao tom psicológico da obra"
+                    width="300" 
+                />
+                <figcaption id="figcaption-crime">
+                    Capa do livro <em>Crime e Castigo</em>, de Fiódor Dostoiévski.
+                </figcaption>
+            </figure>
+        </section>
 
-    </div>
+        <aside class="anchors" role="navigation" aria-label="Neste artigo">
+            <h2 id="neste-artigo">Neste Artigo</h2>
+            <nav aria-labelledby="neste-artigo">
+                <ul>
+                    <li><a href="https://www.amazon.com.br/Crime-castigo-Fi%C3%B3dor-Dostoi%C3%A9vski/dp/8573266465">Adquira o livro</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+
+    <footer class="footer" role="contentinfo" aria-label="Rodapé">
+       <p>Esta página foi editada pela última vez às 02h00min de 24 de fevereiro de 2025.</p>
+       <p>Este texto é disponibilizado nos termos da licença <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt">Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0) da Creative Commons</a>; pode estar sujeito a condições adicionais. Para mais detalhes, consulte as condições de utilização.</p>
+    </footer>
+
 </body>
 </html>
